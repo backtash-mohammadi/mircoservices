@@ -7,7 +7,7 @@ Accept: application/json
 {
   "donor": "alex",
   "recipient": "lisa",
-  "amount" : 101
+  "amount" : 1001
 }
 
 ### Get all transactions made by donor {alex}
