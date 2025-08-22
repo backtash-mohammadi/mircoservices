@@ -1,0 +1,89 @@
+Got you—here’s a clean `.gitignore` for macOS + IntelliJ + Java/Maven (works fine if you later add Gradle).
+Drop this at the repo root.
+
+```gitignore
+# --- macOS cruft ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# --- IDEs ---
+# IntelliJ / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code (in case)
+.vscode/
+
+# Eclipse (in case)
+.classpath
+.project
+.settings/
+
+# --- Build artifacts ---
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Gradle (in case)
+.build/
+build/
+.gradle/
+
+# --- Java / Runtime dumps ---
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+*.hprof
+*.log
+logs/
+*.pid
+
+# --- Env & local config ---
+.env
+.env.*
+!.env.example
+
+# --- Misc editors / temp files ---
+*~
+*.swp
+*.swo
+*.orig
+*.rej
+
+# Keep Maven wrapper if present
+!mvnw
+!mvnw.cmd
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+!.mvn/wrapper/MavenWrapperDownloader.java
+
+# --- Windows cruft ---
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+
