@@ -1,14 +1,15 @@
 package sp.microservices.dtos;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class DonationTransactionDonorCollection {
     private List<DonationTransaction> items;
 
-    public DonationTransactionDonorCollection() {}
-    public DonationTransactionDonorCollection(List<DonationTransaction> items) { this.items = items; }
-
-    public List<DonationTransaction> getItems() { return items; }
-    public void setItems(List<DonationTransaction> items) { this.items = items; }
 }
