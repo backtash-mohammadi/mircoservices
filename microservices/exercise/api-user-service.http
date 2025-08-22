@@ -1,0 +1,26 @@
+# These are the endpoints of the user-service microservice
+### Create a new user {alex} (no duplicate names allowed!)
+POST https://user-service.bulbt.com/users/
+Content-Type: application/json
+
+{
+  "name": "alex",
+  "balance": 100.00
+}
+
+### Get the user {alex} and the current balance
+GET https://user-service.bulbt.com/users/alex
+Accept: application/json
+
+
+### Update the balance of the user {alex}, replaces the old value by {200.00}
+PUT https://user-service.bulbt.com/users/alex
+Content-Type: application/json
+
+{
+  "balance": 200.00
+}
+
+### List all currently registered users
+GET https://user-service.bulbt.com/users/
+Accept: application/json

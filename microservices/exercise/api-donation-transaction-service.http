@@ -1,0 +1,25 @@
+# These are the endpoints of the donation-transaction-service microservice
+### Adds a transaction entry between {alex} and {lisa}
+POST https://donation-transaction-service.bulbt.com/transactions
+Content-Type: application/json
+Accept: application/json
+
+{
+  "donor": "alex",
+  "recipient": "lisa",
+  "amount" : 101
+}
+
+### Get all transactions made by donor {alex}
+GET https://donation-transaction-service.bulbt.com/transactions/donor/alex
+Accept: application/json
+
+### Get all transactions recieved by {lisa}
+GET https://donation-transaction-service.bulbt.com/transactions/recipient/lisa
+Accept: application/json
+
+### Delete donation transaction by id {{2}}
+GET https://donation-transaction-service.bulbt.com/transactions/2
+
+### Delete donation transaction by id {{3}}
+DELETE https://donation-transaction-service.bulbt.com/transactions/3
